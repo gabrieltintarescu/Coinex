@@ -29,7 +29,7 @@ data class CoinDto(
     val type: String
 )
 
-/** Function to convert Coin DTO to Coin */
+/** Function to convert Coin DTO to Coin*/
 fun CoinDto.toCoin(): Coin = Coin(
     id = id,
     isActive = isActive,
