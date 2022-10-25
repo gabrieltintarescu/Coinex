@@ -1,23 +1,22 @@
-package com.gabrieltintarescu.coinex
+/**
+ * @project Coinex
+ * @author Gabriel Tintarescu
+ * @created 10/25/2022
+ */
+package com.gabrieltintarescu.coinex.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.gabrieltintarescu.coinex.ui.theme.CoinexTheme
+import com.gabrieltintarescu.coinex.presentation.ui.theme.CoinexTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             CoinexTheme {
-                // A surface container using the 'background' color from the theme
                 CoinexApp()
             }
         }
