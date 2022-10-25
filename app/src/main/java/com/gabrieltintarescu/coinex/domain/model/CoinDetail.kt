@@ -6,6 +6,8 @@ import com.gabrieltintarescu.coinex.data.remote.dto.TeamMember
  * @project Coinex
  * @author Gabriel Tintarescu
  * @created 10/25/2022
+ *
+ * CoinDetail object definition
  */
 data class CoinDetail(
     val coinId: String,

@@ -5,6 +5,8 @@ package com.gabrieltintarescu.coinex.domain.model
  * @project Coinex
  * @author Gabriel Tintarescu
  * @created 10/25/2022
+ *
+ * Coin object definition
  */
 data class Coin(
     val id: String,

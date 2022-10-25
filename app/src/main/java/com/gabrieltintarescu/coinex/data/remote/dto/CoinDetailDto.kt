@@ -3,7 +3,14 @@ package com.gabrieltintarescu.coinex.data.remote.dto
 
 import com.gabrieltintarescu.coinex.domain.model.CoinDetail
 import com.google.gson.annotations.SerializedName
-
+/**
+ * @project Coinex
+ * @author Gabriel Tintarescu
+ * @created 10/25/2022
+ *
+ * Data Transfer Object for the coin details object
+ * we will receive from the API
+ */
 data class CoinDetailDto(
     @SerializedName("description")
     val description: String,
