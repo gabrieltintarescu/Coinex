@@ -9,6 +9,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 
+
 /**
  * @project Coinex
  * @author Gabriel Tintarescu
@@ -36,14 +37,16 @@ class CoinListViewModel @Inject constructor(
                 is Resource.Success -> {
                     _state.update {
                         it.copy(
-                            coins = result.data ?: emptyList()
+                            coins = result.data ?: emptyList(),
+                            isLoading = false
                         )
                     }
                 }
                 is Resource.Error -> {
                     _state.update {
                         it.copy(
-                            error = result.message ?: "Unexpected error occurred."
+                            error = result.message ?: "Unexpected error occurred.",
+                            isLoading = false
                         )
                     }
                 }

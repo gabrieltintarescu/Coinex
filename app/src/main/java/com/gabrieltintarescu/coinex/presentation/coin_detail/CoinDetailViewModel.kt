@@ -41,14 +41,16 @@ class CoinDetailViewModel @Inject constructor(
                 is Resource.Success -> {
                     _state.update {
                         it.copy(
-                            coin = result.data
+                            coin = result.data,
+                            isLoading = false
                         )
                     }
                 }
                 is Resource.Error -> {
                     _state.update {
                         it.copy(
-                            error = result.message ?: "Unexpected error occurred."
+                            error = result.message ?: "Unexpected error occurred.",
+                            isLoading = false
                         )
                     }
                 }

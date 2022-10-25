@@ -16,15 +16,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
-import com.gabrieltintarescu.coinex.data.remote.dto.TeamMember
-import com.gabrieltintarescu.coinex.presentation.Screen
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.gabrieltintarescu.coinex.presentation.coin_detail.components.CoinTag
 import com.gabrieltintarescu.coinex.presentation.coin_detail.components.TeamListItem
-import com.gabrieltintarescu.coinex.presentation.coins_list.components.CoinListItem
 import com.google.accompanist.flowlayout.FlowRow
 
 /**
@@ -33,7 +29,7 @@ import com.google.accompanist.flowlayout.FlowRow
  * @created 10/25/2022
  */
 @Composable
-fun CoinListScreen(
+fun CoinDetailScreen(
     viewModel: CoinDetailViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.state.collectAsState()

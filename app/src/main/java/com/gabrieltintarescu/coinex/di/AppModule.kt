@@ -10,8 +10,8 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.annotation.Signed
 import javax.inject.Singleton
+
 
 /**
  * @project Coinex

@@ -17,10 +17,10 @@ import retrofit2.http.Path
 interface CoinPaprikaApi {
 
     /** API for retrieving list of coins */
-    @GET("/coins")
+    @GET("coins")
     suspend fun getCoins(): List<CoinDto>
 
     /** API for retrieving coin details by ID */
-    @GET("/coins/{coinId}")
+    @GET("coins/{coinId}")
     suspend fun getCoinById(@Path("coinId") coinId: String): CoinDetailDto
 }
